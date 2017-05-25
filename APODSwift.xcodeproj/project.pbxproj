@@ -14,6 +14,8 @@
 		7BCCB9341ED7338800FE01E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCCB9321ED7338800FE01E9 /* LaunchScreen.storyboard */; };
 		7BCCB93F1ED7338800FE01E9 /* APODSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCB93E1ED7338800FE01E9 /* APODSwiftTests.swift */; };
 		7BCCB94A1ED7338800FE01E9 /* APODSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCB9491ED7338800FE01E9 /* APODSwiftUITests.swift */; };
+		7BCCB9591ED734FE00FE01E9 /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCB9581ED734FE00FE01E9 /* APOD.swift */; };
+		7BCCB95A1ED734FE00FE01E9 /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCB9581ED734FE00FE01E9 /* APOD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		7BCCB9451ED7338800FE01E9 /* APODSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCCB9491ED7338800FE01E9 /* APODSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSwiftUITests.swift; sourceTree = "<group>"; };
 		7BCCB94B1ED7338800FE01E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCCB9581ED734FE00FE01E9 /* APOD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			children = (
 				7BCCB9291ED7338800FE01E9 /* AppDelegate.swift */,
 				7BCCB92B1ED7338800FE01E9 /* ViewController.swift */,
+				7BCCB9581ED734FE00FE01E9 /* APOD.swift */,
 				7BCCB92D1ED7338800FE01E9 /* Main.storyboard */,
 				7BCCB9301ED7338800FE01E9 /* Assets.xcassets */,
 				7BCCB9321ED7338800FE01E9 /* LaunchScreen.storyboard */,
@@ -263,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCCB92C1ED7338800FE01E9 /* ViewController.swift in Sources */,
+				7BCCB9591ED734FE00FE01E9 /* APOD.swift in Sources */,
 				7BCCB92A1ED7338800FE01E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCCB93F1ED7338800FE01E9 /* APODSwiftTests.swift in Sources */,
+				7BCCB95A1ED734FE00FE01E9 /* APOD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +522,7 @@
 				7BCCB9501ED7338800FE01E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BCCB9511ED7338800FE01E9 /* Build configuration list for PBXNativeTarget "APODSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				7BCCB9531ED7338800FE01E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BCCB9541ED7338800FE01E9 /* Build configuration list for PBXNativeTarget "APODSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				7BCCB9561ED7338800FE01E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
