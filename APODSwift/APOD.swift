@@ -68,7 +68,10 @@ class APOD {
         {
             let data = try Data(contentsOf: URL(string: (self.imageData?.hdUrl!)!)!)
             self.image = UIImage(data: data)
-
+            DispatchQueue.main.async
+            {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "dataIsReady"), object: nil)
+            }
         }
         catch let error as NSError
         {
