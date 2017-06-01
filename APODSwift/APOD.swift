@@ -11,7 +11,7 @@ import UIKit
 struct ImageData
 {
     var copyright: String?
-    var data: String?
+    var date: String?
     var explanation: String?
     var title: String?
     var hdUrl: String?
@@ -20,6 +20,8 @@ struct ImageData
 
 class APOD {
     public private(set) var apiKey: String
+    public private(set) var imageData: ImageData?
+    public private(set) var image: UIImage?
     
     init(apiKey: String) {
         self.apiKey = apiKey
@@ -41,6 +43,13 @@ class APOD {
             do
             {
                 let json = try JSONSerialization.jsonObject(with: data!) as! [String: String]
+                self.imageData = ImageData(copyright: json["copyright"],
+                                      date: json["date"],
+                                      explanation: json["explanation"],
+                                      title: json["title"],
+                                      hdUrl: json["hdurl"],
+                                      url: json["url"])
+                self.downloadImage()
                 
                 print(json)
             }
@@ -53,8 +62,18 @@ class APOD {
         
     }
     
-    func downloadImage(isHD: Bool)
+    func downloadImage()
     {
+        do
+        {
+            let data = try Data(contentsOf: URL(string: (self.imageData?.hdUrl!)!)!)
+            self.image = UIImage(data: data)
+
+        }
+        catch let error as NSError
+        {
+            print(error)
+        }
         
     }
 }
