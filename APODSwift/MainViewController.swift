@@ -40,8 +40,8 @@ class MainViewController: UIViewController {
     {
         if let data = AppDelegate.shared.apod.imageData
         {
-            copyrightLabel.text = data.copyright!
-            titleLabel.text = data.title!
+            copyrightLabel.text = data.copyright
+            titleLabel.text = data.title
             dateLabel.text = data.date
             explanationTextView.text = data.explanation
             if let image = AppDelegate.shared.apod.image
